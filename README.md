@@ -20,8 +20,8 @@ npm start
 
 Open:
 
-http://localhost:8080/?/data/boot.json
+http://localhost:8080/?boot.json
 
 or
 
-http://localhost:8080/?/data/logo.json
+http://localhost:8080/?logo.json

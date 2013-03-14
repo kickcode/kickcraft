@@ -8,9 +8,9 @@
       $(document).ready(function() {
         url = window.location.search.replace("?", "")
         if (url == null || url == "") {
-          url = "/data/boot.json";
+          url = "boot.json";
         }
-        $.getJSON(url, function(data) {
+        $.getJSON("./data/" + url, function(data) {
           new KickCraft(document.body, data, ['obsidian', 'grass'], {"35,31,32": 2, "16,158,155": 3});
         });
       })

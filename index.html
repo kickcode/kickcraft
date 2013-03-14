@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>KickCraft</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="kickcraft.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        url = window.location.search.replace("?", "")
+        if (url != null && url != "") {
+          $.getJSON(url, function(data) {
+            new KickCraft(document.body, data, ['obsidian', 'grass'], {"35,31,32": 2, "16,158,155": 3});
+          });
+        }
+      })
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

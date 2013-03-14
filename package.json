@@ -1,0 +1,15 @@
+{
+  "name": "kickcraft",
+  "version": "0.0.1",
+  "dependencies": {
+    "voxel-engine": "0.5.3",
+    "painterly-textures": "0.0.3"
+  },
+  "devDependencies": {
+    "coffee-browserify": "0.1.0",
+    "browservefy": "0.0.9"
+  },
+  "scripts": {
+    "start": "browservefy src/kickcraft.coffee:kickcraft.min.js 8080"
+  }
+}

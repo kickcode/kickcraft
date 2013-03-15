@@ -1,7 +1,6 @@
 class KickCraft
   constructor: (@container, @data, @materials = [], @colors = {})->
     createGame = require('voxel-engine')
-    texturePath = require('painterly-textures')(__dirname)
     @materials.unshift(['grass', 'dirt', 'grass_dirt'])
 
     height = Object.keys(@data).length
@@ -11,7 +10,7 @@ class KickCraft
       width = 0
 
     game = createGame
-      texturePath: texturePath,
+      texturePath: './textures/',
       generate: (x, y, z)=>
         return 1 if y == 1
         local_x = parseInt(x + (width / 2))

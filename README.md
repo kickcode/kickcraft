@@ -4,6 +4,8 @@
 
 Learn more about how awesome voxel.js is at http://voxeljs.com
 
+Thanks to the painterly-textures module for the textures in use (https://github.com/dariusk/painterly-textures), which itself is based on the excellent Painterly Pack (http://painterlypack.net/).
+
 ## Installation
 
 ``` shell
